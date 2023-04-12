@@ -1,17 +1,14 @@
+import Header from "../../components/Header";
 import NavBar from "../../components/Navbar";
+import Main from "../../components/Main";
 
 export default function HomePage() {
   return (
-    <>
+    <body>
       <NavBar />
-      <header>
-        <div></div>
-      </header>
-      <main>
-        <sidebar></sidebar>
-        <div></div>
-      </main>
+      <Header />
+      <Main />
       <div className="pagination_class"></div>
-    </>
+    </body>
   );
 }
