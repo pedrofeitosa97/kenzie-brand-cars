@@ -1,4 +1,4 @@
-import { HomeContext } from "../../../Providers/homeContext";
+import { HomeContext } from "../../../../Providers/homeContext";
 import { useContext } from "react";
 
 export default function Cor() {

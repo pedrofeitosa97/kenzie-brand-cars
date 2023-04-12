@@ -49,6 +49,7 @@ export default function HomeProvider({ children }) {
       .join("&");
     const url = "http://localhost:3001/" + filteredParams;
     console.log(url);
+    console.log("chamar o axios");
   }
 
   return (
