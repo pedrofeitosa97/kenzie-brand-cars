@@ -4,11 +4,11 @@ import Main from "../../components/Main";
 
 export default function HomePage() {
   return (
-    <body>
+    <div>
       <NavBar />
       <Header />
       <Main />
       <div className="pagination_class"></div>
-    </body>
+    </div>
   );
 }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardStyle = styled.div`
   width: 312px;
+  margin: 0px 12px 0px 12px;
 
   .div--img {
     width: 312px;
@@ -18,5 +19,11 @@ export const CardStyle = styled.div`
   }
   .h2--car-name {
     margin: 16px 0px 16px 0px;
+  }
+  .div--name-logo {
+    display: flex;
+  }
+  .div--name-logo div {
+    margin-right: 15px;
   }
 `;

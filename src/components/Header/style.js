@@ -3,6 +3,7 @@ import Photo from "../../statics/Photo.png";
 
 export const HeaderStyle = styled.header`
   height: 530px;
+  width: var(--page-width);
   background-image: url(${Photo});
   background-color: grey;
   background-size: 1000px 450px;

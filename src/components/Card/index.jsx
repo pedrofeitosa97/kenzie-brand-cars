@@ -8,7 +8,7 @@ export function Card({ iten }) {
       </div>
       <h2 className="h2--car-name">{`${iten.mark} - ${iten.model}`}</h2>
       <p>{iten.description}</p>
-      <div>
+      <div className="div--name-logo">
         <div>IDK</div>
         <div className="div--seller-name">{iten.owner}</div>
       </div>

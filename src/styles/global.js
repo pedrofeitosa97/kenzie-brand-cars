@@ -8,5 +8,10 @@ export default createGlobalStyle`
     }
     :root{
         --margin-nav-1: 4rem;
+        --page-width: 1600px;
     }
+    body{
+        width: 1600px;
+    }
+
 `;
