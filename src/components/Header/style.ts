@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import Photo from "../../statics/Photo.png";
 
-export const HeaderStyle = styled.header`
+export const HeaderStyle = styled.header<{grey2: string, whiteFixed: string}>`
   height: 530px;
   width: var(--page-width);
   background-image: url(${Photo});
-  background-color: grey;
+  background-color: ${({ grey2 }) => grey2};
   background-size: 1000px 450px;
   background-repeat: no-repeat;
   align-items: center;
   display: flex;
   justify-content: center;
   background-position: center;
-  color: white;
+  color: ${({ whiteFixed }) => whiteFixed};
 
   h1 {
     font-size: 46px;
