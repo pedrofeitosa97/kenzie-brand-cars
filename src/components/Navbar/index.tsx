@@ -1,9 +1,10 @@
 import { Nav, Background } from "./style";
+import { themes } from '../../styles/variables';
 
 export default function NavBar() {
   return (
-    <Background>
-      <Nav>
+    <Background grey0={themes.colors.grey0}>
+      <Nav whiteFixed={themes.colors.whiteFixed} grey2={themes.colors.grey2}>
         <div className="nav_div_1">
           <p>Motors shop</p>
         </div>

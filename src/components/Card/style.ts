@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardStyle = styled.div`
+export const CardStyle = styled.div<{color: string}>`
   width: 312px;
   margin: 0px 12px 0px 12px;
 
@@ -11,7 +11,7 @@ export const CardStyle = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0px;
-    background-color: #e9ecef;
+    background-color: ${({ color }) => color};
   }
   .div--img img {
     width: 80%;

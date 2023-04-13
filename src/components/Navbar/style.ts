@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Background = styled.div`
-  background-color: black;
+export const Background = styled.div<{grey0: string}>`
+  background-color: ${({ grey0 }) => grey0};
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{whiteFixed: string, grey2: string}>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,16 +12,16 @@ export const Nav = styled.nav`
   align-items: center;
   height: 80px;
   border-style: none none solid none;
-  border-color: grey;
+  border-color: ${({ grey2 }) => grey2};
   border-radius: 8px 8px 0px 0px;
-  background-color: white;
+  background-color: ${({ whiteFixed }) => whiteFixed};
 
   .nav_div_2 {
     display: flex;
     justify-content: space-between;
     width: 25%;
     border-style: none none none solid;
-    border-color: grey;
+    border-color: ${({ grey2 }) => grey2};
     height: 80px;
     align-items: center;
     padding-left: var(--margin-nav-1);

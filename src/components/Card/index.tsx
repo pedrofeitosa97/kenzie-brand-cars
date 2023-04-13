@@ -1,8 +1,9 @@
 import { CardStyle } from "./style";
+import { themes } from '../../styles/variables';
 
-export function Card({ iten }) {
+export function Card({ iten }: any) {
   return (
-    <CardStyle>
+    <CardStyle color={themes.colors.grey7}>
       <div className="div--img">
         <img src={`${iten.image}`} alt="car img" />
       </div>

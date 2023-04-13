@@ -1,6 +1,7 @@
 import HomePage from "./pages/home";
 import GlobalStyles from "./styles/global";
-import "./App.css";
+import { themes } from './styles/variables';
+
 
 function App() {
   return (
