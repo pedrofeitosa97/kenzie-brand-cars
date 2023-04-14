@@ -5,4 +5,5 @@ export const MainStyle = styled.main`
   justify-content: space-between;
   width: var(--page-width);
   margin-right: 64px;
+  min-height: 1200px;
 `;

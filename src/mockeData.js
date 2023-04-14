@@ -71,4 +71,16 @@ export const data = [
     mark: "Chevrolet",
     owner: "Reginaldo Rossi",
   },
+  {
+    id: 7,
+    description: "Um carro muito maneiro que faz muito barulho pras mina",
+    year: 2012,
+    km: 4542,
+    price: 28.325,
+    image:
+      "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
+    model: "ONIX PLUS",
+    mark: "Chevrolet",
+    owner: "Ronaldinho das Mina",
+  },
 ];

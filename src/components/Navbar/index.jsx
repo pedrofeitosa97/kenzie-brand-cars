@@ -1,15 +1,17 @@
 import { Nav, Background } from "./style";
+import { NavButtonStyle } from "../../styles/buttons";
 
 export default function NavBar() {
   return (
     <Background>
       <Nav>
         <div className="nav_div_1">
-          <p>Motors shop</p>
+          <h2>Motors</h2>
+          <p>shop</p>
         </div>
         <div className="nav_div_2">
           <p>Fazer Login</p>
-          <button>Cadastrar</button>
+          <NavButtonStyle>Cadastrar</NavButtonStyle>
         </div>
       </Nav>
     </Background>

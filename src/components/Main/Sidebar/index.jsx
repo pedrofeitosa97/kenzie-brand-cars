@@ -5,10 +5,12 @@ import Ano from "./SidebarFilters/Ano";
 import Combustivel from "./SidebarFilters/Combustivel";
 import Km from "./SidebarFilters/Km";
 import Preco from "./SidebarFilters/Preco";
+import { CleanFiltterButtonStyle } from "../../../styles/buttons";
+import { SidebarStyle } from "./style";
 
 export default function Sidebar() {
   return (
-    <sidebar>
+    <SidebarStyle>
       <Marca />
       <Modelo />
       <Cor />
@@ -16,6 +18,7 @@ export default function Sidebar() {
       <Combustivel />
       <Km />
       <Preco />
-    </sidebar>
+      <CleanFiltterButtonStyle>Limpar Filtros</CleanFiltterButtonStyle>
+    </SidebarStyle>
   );
 }
