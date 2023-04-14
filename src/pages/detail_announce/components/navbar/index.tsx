@@ -8,7 +8,12 @@ export const Navbar = () =>{
         <StyledNavbar>
             <nav>
                 <img src={logo} alt="Logo da Motors Shop" />
-                <img src={barsIcon} alt="Icone de Menu no tipo hamburger" />
+                <img className="menu-burger" src={barsIcon} alt="Icone de Menu no tipo hamburger" />
+                <div className="profile-info">
+                    <h2 className="profile-initials">SL</h2>
+                    <p>Samuel Leão</p>
+
+                </div>
             </nav>
         </StyledNavbar>
     )

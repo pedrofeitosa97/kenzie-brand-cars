@@ -73,14 +73,14 @@ export const DetailAnnouncementPage = () => {
                         <CarImageCard sourceImage={currentCar.image} />
                         <CarInfoCard color={currentCar.color} fuel={currentCar.fuel} km={currentCar.km} mark={currentCar.mark} model={currentCar.model} price={currentCar.price} price_fipe={currentCar.price_fipe} year={currentCar.year} />
                         <CarDescriptionCard description={currentCar.description} />
-                        <CarImageGalery galery={currentCar.gallery} />
-                        <AdvertiserCard />
+                        <CarImageGalery className="custom-mobile" galery={currentCar.gallery} />
+                        <AdvertiserCard className="custom-mobile"/>
                         <AnnouncementComents />
                         <CreateComentCard />
                         <Footer />
                     </div>
                     <div className="desktop">
-                        <CarImageGalery className="custom" galery={currentCar.gallery}/>
+                        <CarImageGalery className="custom-desktop" galery={currentCar.gallery}/>
                         <AdvertiserCard />
                     </div>
                 </div>

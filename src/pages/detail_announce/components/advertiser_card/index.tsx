@@ -1,9 +1,11 @@
 import { StyledAdvertiserCard } from "./style"
 
 
+interface IAdvertiserCard{
+    className?:string
+}
 
-
-export const AdvertiserCard = () => {
+export const AdvertiserCard = ({className}: IAdvertiserCard) => {
     return (
         <StyledAdvertiserCard>
             <div className="profile-initials">

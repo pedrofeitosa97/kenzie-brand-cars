@@ -11,7 +11,7 @@ export const StyledDetailAnnouncementPage = styled.div`
     }
     .desktop {
       display: none;
-      width: 100%;
+      width: 50%;
       height: 100%;
       @media (min-width: 1024px) {
         display: flex;
@@ -19,12 +19,16 @@ export const StyledDetailAnnouncementPage = styled.div`
       }
     }
   }
-  .custom{
+  .custom-desktop{
     min-height: 15.5rem;
     div{
       height: 100%;
     }
-    /* height: 20% !important; */
     margin-top: 6rem;
+  }
+  .custom-mobile{
+    @media (min-width: 1024px){
+      display: none;
+    }
   }
 `;
