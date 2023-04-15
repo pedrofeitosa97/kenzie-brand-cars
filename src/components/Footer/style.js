@@ -8,6 +8,7 @@ export const FooterDivStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0px 59px 0px 59px;
+  margin-top: 70px;
 
   a:link {
     color: white;

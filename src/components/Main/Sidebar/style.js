@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const SidebarStyle = styled.div`
-  padding-left: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+
   h2 {
     margin-bottom: 15px;
   }

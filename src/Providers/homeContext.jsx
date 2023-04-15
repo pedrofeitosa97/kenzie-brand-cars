@@ -9,6 +9,7 @@ export default function HomeProvider({ children }) {
   const notifyError = (message) => toast.error(message);
 
   const [pagesItemsList, setPagesItemsList] = useState([]);
+  const [totalPages, setTotalPages] = useState();
 
   const [cardsList, setCardsList] = useState([]);
   const [filterData, setFilterData] = useState({
@@ -23,7 +24,6 @@ export default function HomeProvider({ children }) {
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
-  const totalPages = Math.ceil(cardsList.length / itemsPerPage);
 
   const handlePageClick = (event, page) => {
     event.preventDefault();
@@ -31,6 +31,7 @@ export default function HomeProvider({ children }) {
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     setPagesItemsList(cardsList.slice(startIndex, endIndex));
+    setTotalPages(Math.ceil(cardsList.length / itemsPerPage));
   };
 
   function handleFilterValueSelect(key, value) {
@@ -66,9 +67,10 @@ export default function HomeProvider({ children }) {
     console.log(url);
     console.log("chamar o axios");
     setCardsList(data);
-    const startIndex = (currentPage - 1) * itemsPerPage;
+    const startIndex = 1;
     const endIndex = startIndex + itemsPerPage;
-    setPagesItemsList(data.slice(1, endIndex));
+    setPagesItemsList(data.slice(0, endIndex - 1));
+    setTotalPages(Math.ceil(data.length / itemsPerPage));
   }
 
   return (

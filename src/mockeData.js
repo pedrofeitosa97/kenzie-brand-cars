@@ -7,7 +7,7 @@ export const data = [
     price: 20.434,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/04-images/novo-onix-branco-summit.png?imwidth=419",
-    model: "ONIX",
+    model: "ONIX 01",
     mark: "Chevrolet",
     owner: "Paulo Vitor",
   },
@@ -19,7 +19,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 02",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },
@@ -31,7 +31,7 @@ export const data = [
     price: 32.122,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/02-images/cruze-sport6-rs-carros.jpg?imwidth=419",
-    model: "CRUZE SPORT6 RS",
+    model: "CRUZE SPORT6 RS 03",
     mark: "Chevrolet",
     owner: "Reginaldo Rossi",
   },
@@ -43,7 +43,7 @@ export const data = [
     price: 20.434,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/04-images/novo-onix-branco-summit.png?imwidth=419",
-    model: "ONIX",
+    model: "ONIX 04",
     mark: "Chevrolet",
     owner: "Paulo Vitor",
   },
@@ -55,7 +55,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 05",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },
@@ -67,7 +67,7 @@ export const data = [
     price: 32.122,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/02-images/cruze-sport6-rs-carros.jpg?imwidth=419",
-    model: "CRUZE SPORT6 RS",
+    model: "CRUZE SPORT6 RS 06",
     mark: "Chevrolet",
     owner: "Reginaldo Rossi",
   },
@@ -79,7 +79,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 07",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },
@@ -91,7 +91,7 @@ export const data = [
     price: 32.122,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/02-images/cruze-sport6-rs-carros.jpg?imwidth=419",
-    model: "CRUZE SPORT6 RS",
+    model: "CRUZE SPORT6 RS 08",
     mark: "Chevrolet",
     owner: "Reginaldo Rossi",
   },
@@ -103,7 +103,7 @@ export const data = [
     price: 20.434,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/04-images/novo-onix-branco-summit.png?imwidth=419",
-    model: "ONIX",
+    model: "ONIX 09",
     mark: "Chevrolet",
     owner: "Paulo Vitor",
   },
@@ -115,7 +115,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 10",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },
@@ -127,7 +127,7 @@ export const data = [
     price: 32.122,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/02-images/cruze-sport6-rs-carros.jpg?imwidth=419",
-    model: "CRUZE SPORT6 RS",
+    model: "CRUZE SPORT6 RS 11",
     mark: "Chevrolet",
     owner: "Reginaldo Rossi",
   },
@@ -139,7 +139,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 12",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },
@@ -151,7 +151,7 @@ export const data = [
     price: 28.325,
     image:
       "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/segmento-carros/01-images/onix-plus-premier.jpg?imwidth=419",
-    model: "ONIX PLUS",
+    model: "ONIX PLUS 13",
     mark: "Chevrolet",
     owner: "Ronaldinho das Mina",
   },

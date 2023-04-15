@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
 import { HomeContext } from "../../Providers/homeContext";
+import { PaginationDivStyle } from "./style";
 
 export default function Pagination() {
   const { handlePageClick, currentPage, totalPages } = useContext(HomeContext);
 
   return (
-    <div>
+    <PaginationDivStyle>
       <button
         onClick={(event) => handlePageClick(event, currentPage - 1)}
         disabled={currentPage === 1}
@@ -13,14 +14,14 @@ export default function Pagination() {
         Anterior
       </button>
       <span>
-        Página {currentPage} de {totalPages}
+        {currentPage} de {totalPages}
       </span>
       <button
         onClick={(event) => handlePageClick(event, currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        Próxima
+        Seguinte
       </button>
-    </div>
+    </PaginationDivStyle>
   );
 }

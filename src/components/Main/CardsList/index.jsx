@@ -1,6 +1,6 @@
 import { Card } from "../../Card";
 import { data } from "../../../mockeData";
-import { CardListStyle } from "./style";
+import { CardListStyle, CardsSection } from "./style";
 import { useContext, useEffect } from "react";
 import { HomeContext } from "../../../Providers/homeContext";
 import Pagination from "../../Pagination";
@@ -11,15 +11,17 @@ export default function CardsList() {
     axiosFilterRequest();
   }, []);
   return (
-    <CardListStyle id="footer-anchor">
-      {pagesItemsList ? (
-        pagesItemsList.map((dataIten) => (
-          <Card iten={dataIten} key={dataIten.id} />
-        ))
-      ) : (
-        <></>
-      )}
+    <CardsSection>
+      <CardListStyle id="footer-anchor">
+        {pagesItemsList ? (
+          pagesItemsList.map((dataIten) => (
+            <Card iten={dataIten} key={dataIten.id} />
+          ))
+        ) : (
+          <></>
+        )}
+      </CardListStyle>
       <Pagination />
-    </CardListStyle>
+    </CardsSection>
   );
 }
