@@ -1,11 +1,14 @@
 import { createContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import { data } from "../mockeData";
 
 export const HomeContext = createContext({});
 
 export default function HomeProvider({ children }) {
   const notifySucess = (message) => toast.success(message);
   const notifyError = (message) => toast.error(message);
+
+  const [pagesItemsList, setPagesItemsList] = useState([]);
 
   const [cardsList, setCardsList] = useState([]);
   const [filterData, setFilterData] = useState({
@@ -17,6 +20,18 @@ export default function HomeProvider({ children }) {
     price: null,
     km: null,
   });
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+  const totalPages = Math.ceil(cardsList.length / itemsPerPage);
+
+  const handlePageClick = (event, page) => {
+    event.preventDefault();
+    setCurrentPage(page);
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    setPagesItemsList(cardsList.slice(startIndex, endIndex));
+  };
 
   function handleFilterValueSelect(key, value) {
     if (filterData[key] === value) {
@@ -50,6 +65,10 @@ export default function HomeProvider({ children }) {
     const url = "http://localhost:3001/" + filteredParams;
     console.log(url);
     console.log("chamar o axios");
+    setCardsList(data);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    setPagesItemsList(data.slice(1, endIndex));
   }
 
   return (
@@ -58,6 +77,15 @@ export default function HomeProvider({ children }) {
         notifySucess,
         notifyError,
         handleFilterValueSelect,
+        setCardsList,
+        cardsList,
+        currentPage,
+        totalPages,
+        currentPage,
+        handlePageClick,
+        pagesItemsList,
+        setPagesItemsList,
+        axiosFilterRequest,
       }}
     >
       {children}
