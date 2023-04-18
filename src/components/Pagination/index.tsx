@@ -4,13 +4,6 @@ import { PaginationDivStyle } from "./style";
 
 export default function Pagination() {
   const { currentPage, totalPages } = useContext(HomeContext);
-  // const [buttonClass1, setButtonClass1] = useState()
-  // const [buttonClass2, setButtonClass2] = useState()
-
-  // function handleButtonClass(){
-  //   currentPage === totalPages
-  //   setButtonClass2()
-  // }
 
   return (
     <PaginationDivStyle>
@@ -28,9 +21,8 @@ function ButtonBackward() {
   return (
     <button
       onClick={(event) => {
-        handlePageClick(event, currentPage - 1);
+        handlePageClick(currentPage - 1);
       }}
-      disabled={currentPage === 1}
     >
       Anterior
     </button>
@@ -42,9 +34,8 @@ function ButtonForward() {
   return (
     <button
       onClick={(event) => {
-        handlePageClick(event, currentPage + 1);
+        handlePageClick(currentPage + 1);
       }}
-      disabled={currentPage === totalPages}
     >
       Seguinte
     </button>

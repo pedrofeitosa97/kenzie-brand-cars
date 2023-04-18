@@ -8,7 +8,7 @@ export default function Footer() {
         <p>shop</p>
       </div>
       <div>© 2022 - Todos os direitos reservados.</div>
-      <a href="#footer-anchor">
+      <a href="">
         <div className="anchor_main">^</div>
       </a>
     </FooterDivStyle>

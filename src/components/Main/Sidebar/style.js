@@ -12,7 +12,7 @@ export const SidebarStyle = styled.div`
 export const SelectDivStyle2 = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
+  margin-left: 10px;
   color: var(--collor-grey-3);
   font-size: 20px;
   line-height: 25px;

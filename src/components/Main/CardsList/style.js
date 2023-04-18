@@ -4,11 +4,9 @@ export const CardListStyle = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-left: 200px;
-  margin-right: 64px;
+  gap: 40px;
   margin-top: 60px;
-  width: 1200px;
+  width: 1150px;
 `;
 
 export const CardsSection = styled.section`

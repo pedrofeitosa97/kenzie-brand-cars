@@ -15,8 +15,8 @@ export const CardStyle = styled.div`
     background-color: #e9ecef;
   }
   .div--img img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
   }
   .h2--car-name {
     margin: 16px 0px 16px 0px;
