@@ -1,6 +1,6 @@
 import { Container } from "../../components/container"
 import { CarImageCard } from "./components/car_image_card"
-import { Navbar } from "./components/navbar"
+import { Navbar } from "../../components/navbar"
 import { StyledDetailAnnouncementPage } from "./style"
 import { mockDatabase } from '../../mock/data'
 import modelCar from '../../assets/model-car.png'
@@ -65,7 +65,7 @@ export const DetailAnnouncementPage = () => {
     }
     return (
         <StyledDetailAnnouncementPage>
-            <Navbar />
+            {/* <Navbar /> */}
             <Container>
                 <div className="layout">
                     <div className="mobile">
