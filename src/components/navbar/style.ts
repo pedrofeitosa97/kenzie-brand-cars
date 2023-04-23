@@ -64,11 +64,13 @@ export const StyledNavbar = styled.header`
   .btn-login {
     color: #4529e6;
     border: none;
+    cursor: pointer;
   }
   .btn-register {
     border-radius: 4px;
     padding: .5rem 1rem;
     border: 1px solid #DEE2E6;
+    cursor: pointer;
   }
   ul{
     width: 100%;
@@ -78,6 +80,9 @@ export const StyledNavbar = styled.header`
     background-color: #fff;
     height: min-content;
     transition: .5s;
+    @media (min-width: 1024px){
+      display: none;
+    }
   }
   .show{
     transform: translateY(0%);
@@ -93,9 +98,11 @@ export const StyledNavbar = styled.header`
     width: 100%;
     text-align: start;
     list-style: none;
+    cursor: pointer;
     &:last-child{
       justify-content: center;
       button{
+        cursor: pointer;
         width: 100%;
         padding: 1rem;
         border: 1px solid #DEE2E6;
