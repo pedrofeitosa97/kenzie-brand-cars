@@ -1,3 +1,4 @@
+import { Footer } from "../footer"
 import { StyledContainer } from "./style"
 
 
@@ -10,6 +11,7 @@ export const Container= ({children}: IContainerProps) => {
     <StyledContainer>
         <div className="content">
         {children}
+        <Footer/>
         </div>
     </StyledContainer>
     )

@@ -10,7 +10,7 @@ import { CarImageGalery } from "./components/car_image_galery"
 import { AdvertiserCard } from "./components/advertiser_card"
 import { AnnouncementComents } from "./components/announcement_coments"
 import { CreateComentCard } from "./components/create_comment_card"
-import { Footer } from "./components/footer"
+import { Footer } from "../../components/footer"
 import { BackgroundBlue } from "./components/bg_blue"
 export interface ICarAnnouncementDetail {
     year: number;
@@ -67,7 +67,8 @@ export const DetailAnnouncementPage = () => {
         <StyledDetailAnnouncementPage>
             {/* <Navbar /> */}
             <Container>
-                <div className="layout">
+                <h2>Anuncio detail page                </h2>
+                {/* <div className="layout">
                     <div className="mobile">
                         <BackgroundBlue />
                         <CarImageCard sourceImage={currentCar.image} />
@@ -77,13 +78,12 @@ export const DetailAnnouncementPage = () => {
                         <AdvertiserCard className="custom-mobile"/>
                         <AnnouncementComents />
                         <CreateComentCard />
-                        <Footer />
                     </div>
                     <div className="desktop">
                         <CarImageGalery className="custom-desktop" galery={currentCar.gallery}/>
                         <AdvertiserCard />
                     </div>
-                </div>
+                </div> */}
             </Container>
         </StyledDetailAnnouncementPage>
 

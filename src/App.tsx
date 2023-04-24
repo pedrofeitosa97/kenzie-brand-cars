@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Navbar userAuthenticated={userAuthenticated} />
       <Routes>
-        <Route path='' element={ userAuthenticated? <Navigate to='announce-detail' />:<Login />} />
-        <Route path='/register' element={ userAuthenticated? <Navigate to='announce-detail' />:<RegisterPage />} />
+        <Route path='' element={ userAuthenticated? <Navigate to='/announce-detail' />:<Login />} />
+        <Route path='/register' element={ userAuthenticated? <Navigate to='/announce-detail' />:<RegisterPage />} />
         <Route element={<ProtectedRoutes />}>
           <Route path='/announce-detail' element={<DetailAnnouncementPage />} />
           <Route path='/profile/:id' element={<ProfileViewUserPage />} />
