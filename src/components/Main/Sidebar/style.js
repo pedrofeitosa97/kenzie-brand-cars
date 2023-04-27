@@ -7,8 +7,8 @@ export const SidebarStyle = styled.div`
   h2 {
     margin-bottom: 15px;
   }
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 760px) {
+    width: 100%;
     padding-right: 66px;
     margin-top: 30px;
     .align_div_class {
@@ -38,6 +38,7 @@ export const SelectDivStyle2 = styled.div`
 
 export const SelectDivStyle = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 26px;
   margin-bottom: 42px;
 `;

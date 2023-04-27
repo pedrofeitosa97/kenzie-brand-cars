@@ -54,7 +54,7 @@ export const CleanFiltterButtonStyle = styled.button`
 
 export const ShowFiltterButtonStyle = styled.button`
   display: none;
-  @media (max-width: 375px) {
+  @media (max-width: 760px) {
     display: inline;
     width: 279px;
     height: 48px;

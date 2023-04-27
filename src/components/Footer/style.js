@@ -41,7 +41,7 @@ export const FooterDivStyle = styled.div`
     font-size: 16px;
     font-weight: 900;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 760px) {
     flex-direction: column;
     height: var(--footer-height-375px);
 

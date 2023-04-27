@@ -136,6 +136,7 @@ export default function HomeProvider({ children }: HomeProviderPropsInterface) {
     setCardsList(data);
     const startIndex = 1;
     const endIndex = startIndex + itemsPerPage;
+    setCurrentPage(1);
     setPagesItemsList(data.slice(0, endIndex - 1));
     setTotalPages(Math.ceil(data.length / itemsPerPage));
   }

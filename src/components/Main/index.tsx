@@ -7,7 +7,7 @@ import { HomeContext } from "../../Providers/homeContext";
 
 export default function Main() {
   const { setModalFiltter } = useContext(HomeContext);
-  const mobileResoluction = useMediaQuery({ maxWidth: 376 });
+  const mobileResoluction = useMediaQuery({ maxWidth: 761 });
   function resetMobile() {
     if (mobileResoluction) {
       setModalFiltter(false);

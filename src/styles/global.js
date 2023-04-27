@@ -20,7 +20,7 @@ export default createGlobalStyle`
         --collor-brand-3:#B0A6F0;
         --collor-brand-4:#EDEAFD;
         --margin-nav-1: 4rem;
-        --page-width: 1600px;
+        --page-width: 100%;
         --navButton-width-1600px: 133px;
         --navButton-height-1600px: 48px;
         --footer-height-375px: 310px;
@@ -29,7 +29,7 @@ export default createGlobalStyle`
         --border-radius-button-1600px: 4px;
     }
     body{
-        width: 1600px;
+        width: 100%;
     }
     @media (max-width: 375px){
         body{

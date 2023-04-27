@@ -9,7 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function HomePage() {
   const { modalFiltter, setModalFiltter } = useContext(HomeContext);
-  const mobileResoluction = useMediaQuery({ minWidth: 376 });
+  const mobileResoluction = useMediaQuery({ minWidth: 760 });
   function resetMobile() {
     if (mobileResoluction) {
       setModalFiltter(false);

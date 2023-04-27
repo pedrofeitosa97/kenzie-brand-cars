@@ -58,7 +58,7 @@ export const Nav = styled.nav`
     font-style: Semi Bold;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 760px) {
     border-radius: 0px;
     padding: 0px;
     margin: 0px;

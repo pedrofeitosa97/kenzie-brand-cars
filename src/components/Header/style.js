@@ -37,8 +37,8 @@ export const HeaderStyle = styled.header`
     flex-direction: column;
     text-align: center;
   }
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 760px) {
+    width: 100%;
     height: 625px;
     background-size: 600px 264px;
 

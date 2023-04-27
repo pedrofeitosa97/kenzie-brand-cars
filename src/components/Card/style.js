@@ -67,7 +67,7 @@ export const CardStyle = styled.div`
   .h2--price {
     font-size: 16px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 760px) {
     margin: 0px;
     height: 300px;
   }

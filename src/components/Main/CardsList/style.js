@@ -4,15 +4,16 @@ export const CardListStyle = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 35px;
   margin-top: 60px;
-  width: 1150px;
-  @media (max-width: 375px) {
+  width: 100%;
+  align-items: center;
+  @media (max-width: 760px) {
     width: 375px;
     flex-direction: row;
     flex-wrap: nowrap;
     width: initial;
-    height: 380px;
+    height: 450px;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: 12px;
@@ -32,9 +33,9 @@ export const CardListStyle = styled.div`
         linear,
         left bottom,
         left top,
-        color-stop(0.44, rgb(122, 153, 217)),
-        color-stop(0.72, rgb(73, 125, 189)),
-        color-stop(0.86, rgb(28, 58, 148))
+        color-stop(0.44, var(--collor-brand-3)),
+        color-stop(0.72, var(--collor-brand-2)),
+        color-stop(0.86, var(--collor-brand-1))
       );
     }
   }
@@ -44,18 +45,25 @@ export const CardsSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  margin-left: 8rem;
+  margin-right: 20px;
 
   .mobile_filter_button {
     display: none;
   }
+  @media (max-width: 1280px) {
+    margin-left: 3rem;
+  }
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 760px) {
+    width: 100%;
     flex-direction: column;
     margin-top: 73px;
+    margin-left: 0px;
 
     .mobile_filter_button {
-      width: 375px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;

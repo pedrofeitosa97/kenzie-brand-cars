@@ -6,9 +6,13 @@ export const PaginationDivStyle = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1200px) {
+    width: 300px;
+  }
+
+  @media (max-width: 760px) {
     flex-direction: column;
-    width: 375px;
+    width: 100%;
     gap: 25px;
     margin-top: 65px;
   }
