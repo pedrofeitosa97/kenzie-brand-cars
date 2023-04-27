@@ -1,13 +1,19 @@
 import { Card } from "../../Card";
-import { data } from "../../../mockeData";
 import { CardListStyle, CardsSection } from "./style";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { HomeContext } from "../../../Providers/homeContext";
 import Pagination from "../../Pagination";
 import { ICard } from "../../../Providers/homeContext";
+import { ShowFiltterButtonStyle } from "../../../styles/buttons";
 
 export default function CardsList() {
-  const { pagesItemsList, axiosFilterRequest } = useContext(HomeContext);
+  const { pagesItemsList, axiosFilterRequest, setModalFiltter } =
+    useContext(HomeContext);
+
+  const handleButtonClick = () => {
+    setModalFiltter(true);
+  };
+
   useEffect(() => {
     axiosFilterRequest();
   }, []);
@@ -22,6 +28,12 @@ export default function CardsList() {
           <></>
         )}
       </CardListStyle>
+      <div className="mobile_filter_button">
+        <ShowFiltterButtonStyle onClick={() => handleButtonClick()}>
+          <span>Filtros</span>
+        </ShowFiltterButtonStyle>
+      </div>
+
       <Pagination />
     </CardsSection>
   );

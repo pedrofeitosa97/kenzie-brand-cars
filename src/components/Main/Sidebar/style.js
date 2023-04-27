@@ -7,6 +7,19 @@ export const SidebarStyle = styled.div`
   h2 {
     margin-bottom: 15px;
   }
+  @media (max-width: 375px) {
+    width: 375px;
+    padding-right: 66px;
+    margin-top: 30px;
+    .align_div_class {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .display_content_class {
+    display: contents;
+  }
 `;
 
 export const SelectDivStyle2 = styled.div`

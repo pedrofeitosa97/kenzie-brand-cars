@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useState,
-  useEffect,
-  MouseEvent,
-  ReactNode,
-} from "react";
+import { createContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { data } from "../mockeData";
 
@@ -34,6 +28,10 @@ export interface ICard {
 }
 
 type IHomeContextTypes = {
+  modalFiltterClassProperty: string;
+  setFiltterClassProperty: React.Dispatch<React.SetStateAction<string>>;
+  modalFiltter: boolean;
+  setModalFiltter: React.Dispatch<React.SetStateAction<boolean>>;
   setCardsList: React.Dispatch<React.SetStateAction<ICard[]>>;
   setPagesItemsList: React.Dispatch<React.SetStateAction<ICard[]>>;
   pagesItemsList: ICard[];
@@ -51,6 +49,10 @@ type IHomeContextTypes = {
 };
 
 export const HomeContext = createContext<IHomeContextTypes>({
+  modalFiltterClassProperty: "none",
+  setFiltterClassProperty: () => {},
+  modalFiltter: false,
+  setModalFiltter: () => {},
   currentPage: 1,
   totalPages: 0,
   pagesItemsList: [],
@@ -67,6 +69,9 @@ export const HomeContext = createContext<IHomeContextTypes>({
 export default function HomeProvider({ children }: HomeProviderPropsInterface) {
   const notifySucces = (message: string) => toast.success(message);
   const notifyError = (message: string) => toast.error(message);
+
+  const [modalFiltterClassProperty, setFiltterClassProperty] = useState("none");
+  const [modalFiltter, setModalFiltter] = useState(false);
 
   const [pagesItemsList, setPagesItemsList] = useState<ICard[]>([]);
   const [totalPages, setTotalPages] = useState<number>(0);
@@ -138,6 +143,10 @@ export default function HomeProvider({ children }: HomeProviderPropsInterface) {
   return (
     <HomeContext.Provider
       value={{
+        modalFiltter,
+        setModalFiltter,
+        modalFiltterClassProperty,
+        setFiltterClassProperty,
         notifySucces,
         notifyError,
         handleFilterValueSelect,

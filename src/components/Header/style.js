@@ -37,4 +37,23 @@ export const HeaderStyle = styled.header`
     flex-direction: column;
     text-align: center;
   }
+  @media (max-width: 375px) {
+    width: 375px;
+    height: 625px;
+    background-size: 600px 264px;
+
+    .header_fade {
+      justify-content: start;
+      padding-top: 76px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: 500;
+    }
+  }
 `;

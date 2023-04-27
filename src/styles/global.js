@@ -23,12 +23,23 @@ export default createGlobalStyle`
         --page-width: 1600px;
         --navButton-width-1600px: 133px;
         --navButton-height-1600px: 48px;
+        --footer-height-375px: 310px;
         --filtterButton-width-1600px: 125px;
         --filtterButton-height-1600px: 37px;
         --border-radius-button-1600px: 4px;
     }
     body{
         width: 1600px;
+    }
+    @media (max-width: 375px){
+        body{
+            width: 375px;
+            height: auto;
+        }
+    }
+    #root {
+        width: auto;
+        height: auto;
     }
 
 `;

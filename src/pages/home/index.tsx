@@ -2,15 +2,35 @@ import Header from "../../components/Header";
 import NavBar from "../../components/Navbar";
 import Main from "../../components/Main";
 import Footer from "../../components/Footer";
+import { useContext, useEffect } from "react";
+import { HomeContext } from "../../Providers/homeContext";
+import FiltterModal from "../../components/FiltterModal";
+import { useMediaQuery } from "react-responsive";
 
 export default function HomePage() {
+  const { modalFiltter, setModalFiltter } = useContext(HomeContext);
+  const mobileResoluction = useMediaQuery({ minWidth: 376 });
+  function resetMobile() {
+    if (mobileResoluction) {
+      setModalFiltter(false);
+    }
+  }
+  useEffect(() => {
+    resetMobile();
+  }, [mobileResoluction]);
+
   return (
-    <div>
+    <>
       <NavBar />
-      <Header />
-      <Main />
-      <div className="pagination_class"></div>
-      <Footer />
-    </div>
+      {modalFiltter ? (
+        <FiltterModal />
+      ) : (
+        <>
+          <Header />
+          <Main />
+          <Footer />
+        </>
+      )}
+    </>
   );
 }

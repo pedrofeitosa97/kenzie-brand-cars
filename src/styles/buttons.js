@@ -48,5 +48,23 @@ export const CleanFiltterButtonStyle = styled.button`
   border: solid;
   border-color: var(--collor-brand-2);
   background-color: var(--collor-brand-2);
+  border-radius: var(--border-radius-button-1600px);
   color: white;
+`;
+
+export const ShowFiltterButtonStyle = styled.button`
+  display: none;
+  @media (max-width: 375px) {
+    display: inline;
+    width: 279px;
+    height: 48px;
+    font-size: 16px;
+    font-style: semi-bold;
+    font-family: Inter;
+    border: solid;
+    border-color: var(--collor-brand-2);
+    background-color: var(--collor-brand-2);
+    border-radius: var(--border-radius-button-1600px);
+    color: white;
+  }
 `;

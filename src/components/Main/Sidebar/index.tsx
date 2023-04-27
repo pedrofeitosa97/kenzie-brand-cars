@@ -5,10 +5,18 @@ import Ano from "./SidebarFilters/Ano";
 import Combustivel from "./SidebarFilters/Combustivel";
 import Km from "./SidebarFilters/Km";
 import Preco from "./SidebarFilters/Preco";
-import { CleanFiltterButtonStyle } from "../../../styles/buttons";
 import { SidebarStyle } from "./style";
+import { CleanFiltterButtonStyle } from "../../../styles/buttons";
+import { useMediaQuery } from "react-responsive";
+import { useContext } from "react";
+import { HomeContext } from "../../../Providers/homeContext";
 
 export default function Sidebar() {
+  const { setModalFiltter } = useContext(HomeContext);
+  const mobileResoluction = useMediaQuery({ maxWidth: 376 });
+  const handleButtonClick = () => {
+    setModalFiltter(false);
+  };
   return (
     <SidebarStyle>
       <Marca />
@@ -18,7 +26,15 @@ export default function Sidebar() {
       <Combustivel />
       <Km />
       <Preco />
-      <CleanFiltterButtonStyle>Limpar Filtros</CleanFiltterButtonStyle>
+      {!mobileResoluction ? (
+        <CleanFiltterButtonStyle>Limpar Filtros</CleanFiltterButtonStyle>
+      ) : (
+        <div className="align_div_class">
+          <CleanFiltterButtonStyle onClick={() => handleButtonClick()}>
+            Ver Anúncios
+          </CleanFiltterButtonStyle>
+        </div>
+      )}
     </SidebarStyle>
   );
 }

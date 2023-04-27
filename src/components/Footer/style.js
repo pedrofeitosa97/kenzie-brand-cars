@@ -41,4 +41,14 @@ export const FooterDivStyle = styled.div`
     font-size: 16px;
     font-weight: 900;
   }
+  @media (max-width: 375px) {
+    flex-direction: column;
+    height: var(--footer-height-375px);
+
+    padding: 45px 0px 45px 0px;
+    margin-bottom: 0px;
+    .copy_message {
+      font-size: 14px;
+    }
+  }
 `;

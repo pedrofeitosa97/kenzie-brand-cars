@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import Icon from "../../statics/mobile_menu_icon_svg.svg";
 
 export const Background = styled.div`
   background-color: black;
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -52,5 +56,29 @@ export const Nav = styled.nav`
     color: var(--collor-grey-2);
     font-size: 16px;
     font-style: Semi Bold;
+  }
+
+  @media (max-width: 375px) {
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    .nav_div_2 {
+      display: none;
+    }
+    .icon_menu_mobile_div {
+      width: 50px;
+      height: 50px;
+      background-image: url(${Icon});
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      cursor: pointer;
+    }
   }
 `;
