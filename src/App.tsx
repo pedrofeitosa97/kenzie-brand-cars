@@ -7,20 +7,24 @@ import { Navbar } from './components/navbar';
 import { AuthContext } from './context/AuthContext';
 import { ProfileViewUserPage } from './pages/profile_view_user_page';
 import { ProtectedRoutes } from './components/protected_routes';
+import Home from './pages/home';
+import Announce from './pages/announce_page';
+
 function App() {
   const { userAuthenticated } = useContext(AuthContext)
   return (
-    <BrowserRouter>
-      <Navbar userAuthenticated={userAuthenticated} />
-      <Routes>
-        <Route path='' element={ userAuthenticated? <Navigate to='/announce-detail' />:<Login />} />
-        <Route path='/register' element={ userAuthenticated? <Navigate to='/announce-detail' />:<RegisterPage />} />
-        <Route element={<ProtectedRoutes />}>
-          <Route path='/announce-detail' element={<DetailAnnouncementPage />} />
-          <Route path='/profile/:id' element={<ProfileViewUserPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Announce/>
+    // <BrowserRouter>
+    //   <Navbar userAuthenticated={userAuthenticated} />
+    //   <Routes>
+    //     <Route path='' element={ userAuthenticated? <Navigate to='/announce-detail' />:<Login />} />
+    //     <Route path='/register' element={ userAuthenticated? <Navigate to='/announce-detail' />:<RegisterPage />} />
+    //     <Route element={<ProtectedRoutes />}>
+    //       <Route path='/announce-detail' element={<DetailAnnouncementPage />} />
+    //       <Route path='/profile/:id' element={<ProfileViewUserPage />} />
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
   )
 }
 

@@ -7,13 +7,13 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from 'react-hook-form'
 import { useRequests } from '../../../../hooks/RequestsHooks'
 import { FormDataLoginUser, schema } from '../../../../schemas/login_user_schema'
+
 export default function LoginContent() {
   const { loginUserRequest } = useRequests()
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormDataLoginUser>({
     resolver: yupResolver(schema)
   });
   const handleLogin = (data: FormDataLoginUser) =>{
-    console.log(data)
     loginUserRequest(data)
   }
   const navigate = useNavigate()
