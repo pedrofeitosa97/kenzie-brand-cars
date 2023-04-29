@@ -45,6 +45,7 @@ export const CleanFiltterButtonStyle = styled.button`
   font-size: 16px;
   font-style: semi-bold;
   font-family: Inter;
+  font-weight: 600;
   border: solid;
   border-color: var(--collor-brand-2);
   background-color: var(--collor-brand-2);

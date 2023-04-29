@@ -1,4 +1,4 @@
-import HomePage from "./pages/home";
+import PageRoutes from "./routes";
 import GlobalStyles from "./styles/global";
 import "./App.css";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <HomePage />
+      <PageRoutes />
     </>
   );
 }

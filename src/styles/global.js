@@ -19,6 +19,7 @@ export default createGlobalStyle`
         --collor-brand-2:#5126EA;
         --collor-brand-3:#B0A6F0;
         --collor-brand-4:#EDEAFD;
+        --collor-alert-1:#CD2B31;
         --margin-nav-1: 4rem;
         --page-width: 100%;
         --navButton-width-1600px: 133px;
@@ -30,6 +31,7 @@ export default createGlobalStyle`
     }
     body{
         width: 100%;
+        height: 100%;
     }
     @media (max-width: 375px){
         body{
