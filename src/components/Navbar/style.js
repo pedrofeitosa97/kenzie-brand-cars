@@ -68,7 +68,13 @@ export const Nav = styled.nav`
     .nav_div_2 {
       display: none;
     }
+    .drop_menu_div {
+      position: relative;
+      width: 50px;
+      height: 50px;
+    }
     .icon_menu_mobile_div {
+      position: relative;
       width: 50px;
       height: 50px;
       background-image: url(${Icon});
@@ -78,6 +84,30 @@ export const Nav = styled.nav`
       display: flex;
       justify-content: center;
       background-position: center;
+      cursor: pointer;
+    }
+    .menu_bar_div {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 3;
+    }
+    .dropMenuItem {
+      height: 65px;
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px;
+      border-color: var(--collor-grey-4);
+      border-radius: 4px;
+      font-family: Inter;
+      font-size: 24px;
       cursor: pointer;
     }
   }
