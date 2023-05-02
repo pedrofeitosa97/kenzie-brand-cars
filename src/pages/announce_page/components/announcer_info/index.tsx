@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../../../home/components/header'
+import Header from '../../../home/components/Header'
 import { StyledAnnounceHeaderDiv, StyledAnnouncerCard } from './style'
 
 export default function AnnouncerInfo() {

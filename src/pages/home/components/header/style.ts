@@ -1,51 +1,58 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const StyledHeader = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
+export const HeaderStyle = styled.header`
+  height: 530px;
+  width: var(--page-width);
+  background-image: url('https://cdn.discordapp.com/attachments/733520580355293286/1103020532313636904/Photo.png');
+  background-color: grey;
+  background-size: 1000px 450px;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  color: white;
 
-.burguer_icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-}
+  h1 {
+    font-size: 46px;
+  }
 
-.header_name {
-    padding-block: 26px;
-    padding-inline: 30px;
-}
+  p {
+    font-size: 36px;
+  }
 
-button {
-    display: none;
-}
+  .header_fade {
+    width: 100%;
+    height: 100%;
+    background: rgb(246, 246, 246);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 0) 0%,
+      rgba(7, 7, 7, 1) 83%,
+      rgba(0, 0, 0, 1) 96%
+    );
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    width: 100%;
+    height: 625px;
+    background-size: 600px 264px;
 
-@media (min-width: 800px) {
-    .burguer_icon {
-        display: none;
+    .header_fade {
+      justify-content: start;
+      padding-top: 76px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
     }
 
-    .header_buttons {
-        display: flex;
-        gap: 40px;
-        padding-right: 30px;
+    p {
+      font-size: 26px;
+      font-weight: 500;
     }
-
-    button {
-        display: flex;
-        padding: 15px 30px;
-        background: transparent;
-        cursor: pointer;
-    }
-
-    .login_button {
-        border: none;
-    }
-
-    .login_register {
-        border: 2px solid #DEE2E6;
-        border-radius: 4px;
-    }
-}
-`
-
+  }
+`;

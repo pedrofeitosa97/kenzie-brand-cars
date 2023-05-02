@@ -1,39 +1,22 @@
-import React from 'react'
-import Card from '../../../home/components/main/components/car_card'
+import React, {useContext} from 'react'
+import { Card } from '../../../home/components/Card'
+import { ICard } from '../../../../providers/homeContext';
 import { StyledAnnouncerCardDiv } from './styled'
+import { HomeContext } from '../../../../providers/homeContext';
 
 export default function AnnouncerCards() {
+const { pagesItemsList, axiosFilterRequest, setModalFiltter } = useContext(HomeContext);
   return (
     <StyledAnnouncerCardDiv>
         <h2>Anúncios</h2>
         <ul>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
-            <li>
-                <Card/>
-            </li>
+        {pagesItemsList ? (
+          pagesItemsList.map((dataIten: ICard) => (
+            <Card item={dataIten} key={dataIten.id} />
+          ))
+        ) : (
+          <></>
+        )}
         </ul>
         <div className="pagination">
                 <p className='page'><span className='selected_page'>1</span> de 2</p>

@@ -1,135 +1,25 @@
-import React from 'react'
-import Card from './components/car_card'
-import { StyledDiv } from './style'
+import Sidebar from "./Sidebar";
+import CardsList from "./CardsList";
+import { MainStyle } from "./style";
+import { useMediaQuery } from "react-responsive";
+import { useContext, useEffect } from "react";
+import { HomeContext } from "../../../../providers/homeContext";
 
 export default function Main() {
+  const { setModalFiltter } = useContext(HomeContext);
+  const mobileResoluction = useMediaQuery({ maxWidth: 761 });
+  function resetMobile() {
+    if (mobileResoluction) {
+      setModalFiltter(false);
+    }
+  }
+  useEffect(() => {
+    resetMobile();
+  }, [mobileResoluction]);
   return (
-    <>
-      <StyledDiv>
-        <section className='filter_option'>
-          <div>
-          <h2>Marca</h2>
-            <ul>
-              <li>
-                <p>General Motors</p>
-              </li>
-              <li>
-                <p>Fiat</p>
-              </li>
-              <li>
-                <p>Honda</p>
-              </li>
-              <li>
-                <p>Porsche</p>
-              </li>
-              <li>
-                <p>Volkswagem</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-          <h2>Modelo</h2>
-            <ul>
-              <li>
-                <p>General Motors</p>
-              </li>
-              <li>
-                <p>Fiat</p>
-              </li>
-              <li>
-                <p>Honda</p>
-              </li>
-              <li>
-                <p>Porsche</p>
-              </li>
-              <li>
-                <p>Volkswagem</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-          <h2>Cor</h2>
-            <ul>
-              <li>
-                <p>General Motors</p>
-              </li>
-              <li>
-                <p>Fiat</p>
-              </li>
-              <li>
-                <p>Honda</p>
-              </li>
-              <li>
-                <p>Porsche</p>
-              </li>
-              <li>
-                <p>Volkswagem</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-          <h2>Ano</h2>
-            <ul>
-              <li>
-                <p>General Motors</p>
-              </li>
-              <li>
-                <p>Fiat</p>
-              </li>
-              <li>
-                <p>Honda</p>
-              </li>
-              <li>
-                <p>Porsche</p>
-              </li>
-              <li>
-                <p>Volkswagem</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-          <h2>Combustível</h2>
-            <ul>
-              <li>
-                <p>General Motors</p>
-              </li>
-              <li>
-                <p>Fiat</p>
-              </li>
-              <li>
-                <p>Honda</p>
-              </li>
-              <li>
-                <p>Porsche</p>
-              </li>
-              <li>
-                <p>Volkswagem</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-          <h2>Km</h2>
-            <input type="text" />
-          </div>
-          <div>
-          <h2>Preço</h2>
-            <input type="text" />
-          </div>
-        </section>
-        <section className='car_cards'>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-        </section>
-        <section className='filter_buttons'>
-          <button className='filter_button_filter'>Filtros</button>
-          <p className='filter_paragraph'>1 de 2</p>
-          <p className='filter_paragraph'>Seguinte</p>
-        </section>
-      </StyledDiv>
-    </>
-  )
+    <MainStyle>
+      {!mobileResoluction && <Sidebar />}
+      <CardsList />
+    </MainStyle>
+  );
 }
