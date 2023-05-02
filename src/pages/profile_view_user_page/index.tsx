@@ -37,7 +37,7 @@ export const ProfileViewUserPage = () => {
                 </div>
                 <div className="pagination">
                     <p>1 de 2</p>
-                    <p className="forwad">Seguinte</p>
+                    <p className="forward">Seguinte</p>
                 </div>
             </StyledProfileViewUserPage>
         </Container>

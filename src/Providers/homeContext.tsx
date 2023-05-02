@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
-import { toast } from "react-toastify";
-import { data } from "../mockeData";
+import {toast} from 'react-toastify'
+import { data } from '../mockeData'
 
 interface HomeProviderPropsInterface {
   children: React.ReactNode;
