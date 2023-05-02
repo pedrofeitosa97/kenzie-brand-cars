@@ -11,7 +11,9 @@ import { ProtectedRoutes } from './components/protected_routes';
 import Announce from './pages/announce_page';
 
 function App() {
+
   const { userAuthenticated, modalState, setModalState} = useContext(AuthContext)
+
   return (
     <BrowserRouter>
       <Navbar setModalState={setModalState} userAuthenticated={userAuthenticated} />

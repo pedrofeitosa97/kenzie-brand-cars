@@ -12,7 +12,7 @@ interface INavbar {
     userAuthenticated: boolean;
   }
 
-export const Navbar = ({ userAuthenticated,setModalState }: INavbar) => {
+export const Navbar = ({ userAuthenticated, setModalState }: INavbar) => {
     const [showNavbarMobile, setShowNavbarMobile] = useState<boolean>(false)
     const {currentUser} = useContext(AuthContext)
     const navigate = useNavigate()

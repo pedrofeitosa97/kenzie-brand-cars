@@ -1,6 +1,6 @@
 import { HeaderStyle } from "./style";
 
-export default function Header_Home() {
+export default function HeaderHome() {
   return (
     <HeaderStyle>
       <div className="header_fade">
