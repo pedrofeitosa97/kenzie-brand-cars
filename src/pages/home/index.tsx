@@ -1,10 +1,10 @@
-import Header from "../../components/Header";
-import NavBar from "../../components/Navbar";
-import Main from "../../components/Main";
-import Footer from "../../components/Footer";
+import Header from "../../components2/Header";
+import NavBar from "../../components2/Navbar";
+import Main from "../../components2/Main";
+import Footer from "../../components2/Footer";
 import { useContext, useEffect } from "react";
 import { HomeContext } from "../../Providers/homeContext";
-import FiltterModal from "../../components/FiltterModal";
+import FiltterModal from "../../components2/FiltterModal";
 import { useMediaQuery } from "react-responsive";
 
 export default function HomePage() {

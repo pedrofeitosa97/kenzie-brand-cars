@@ -1,16 +1,13 @@
-import { FooterDivStyle } from "./style";
+import { StyledFooter } from "./style"
 
-export default function Footer() {
-  return (
-    <FooterDivStyle>
-      <div className="nav_div_1">
-        <h2>Motors</h2>
-        <p>shop</p>
-      </div>
-      <span>© 2022 - Todos os direitos reservados.</span>
-      <a href="">
-        <div className="anchor_main">^</div>
-      </a>
-    </FooterDivStyle>
-  );
+
+
+
+export const Footer = () => {
+    return(
+        <StyledFooter>
+            <h2>Motors<span>shop</span></h2>
+            <p>© 2022 - Todos os direitos reservados.</p>
+        </StyledFooter>
+    )
 }

@@ -1,6 +1,6 @@
-import RecoveryChangePasswordForm from "../../components/RecoveryForm/RecoveryChangePasswordForm";
-import NavBar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import RecoveryChangePasswordForm from "../../components2/RecoveryForm/RecoveryChangePasswordForm";
+import NavBar from "../../components2/Navbar";
+import Footer from "../../components2/Footer";
 
 export default function RecoveryChangePasswordFormPage() {
   return (
